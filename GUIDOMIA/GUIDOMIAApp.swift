@@ -1,17 +1,12 @@
-//
-//  GUIDOMIAApp.swift
-//  GUIDOMIA
-//
-//  Created by Alex Crowe on 2023-01-27.
-//
-
 import SwiftUI
 
 @main
 struct GUIDOMIAApp: App {
+    let serviceProvider = ServiceProvider()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CarsUseCase(model: serviceProvider.carsUseCaseModel)
+                .apply(serviceProvider.styleFactory.carsUseCaseStyle)
         }
     }
 }

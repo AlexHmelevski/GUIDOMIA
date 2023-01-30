@@ -6,7 +6,7 @@ final class ServiceProvider {
     }
     
     var carsReader: CarsReader {
-        CarsReaderJSONMock()
+        CarsReaderPersistenceDecorator(original: CarsReaderJSONMock())
     }
     
     var carsListModel: CarList.Model {

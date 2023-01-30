@@ -1,6 +1,6 @@
 import Foundation
 
-struct CarDataModel: Decodable {
+struct CarDataModel: Codable {
     let make: String
     let marketPrice: Double
     let model: String
@@ -47,3 +47,5 @@ final class CarsReaderJSONMock: CarsReader {
         return  try await resourceReader.getJSONResource(named: "car_list")
     }
 }
+
+

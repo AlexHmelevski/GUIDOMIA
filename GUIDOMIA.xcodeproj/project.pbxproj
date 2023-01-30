@@ -62,6 +62,8 @@
 		ADC325B32987895500819765 /* DropDownPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC325B22987895500819765 /* DropDownPickerModel.swift */; };
 		ADC325B52987896000819765 /* DropDownPickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC325B42987896000819765 /* DropDownPickerStyle.swift */; };
 		ADC325B72987896F00819765 /* DropDownPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC325B62987896F00819765 /* DropDownPickerConfiguration.swift */; };
+		ADC325BB2988078900819765 /* FileManager.Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC325BA2988078900819765 /* FileManager.Convenience.swift */; };
+		ADC325BD298809E800819765 /* CarsReaderPersistenceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC325BC298809E800819765 /* CarsReaderPersistenceDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,8 @@
 		ADC325B22987895500819765 /* DropDownPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerModel.swift; sourceTree = "<group>"; };
 		ADC325B42987896000819765 /* DropDownPickerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerStyle.swift; sourceTree = "<group>"; };
 		ADC325B62987896F00819765 /* DropDownPickerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerConfiguration.swift; sourceTree = "<group>"; };
+		ADC325BA2988078900819765 /* FileManager.Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.Convenience.swift; sourceTree = "<group>"; };
+		ADC325BC298809E800819765 /* CarsReaderPersistenceDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsReaderPersistenceDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5AD0112985DCAE00833E52 /* CarsReader.swift */,
+				ADC325BC298809E800819765 /* CarsReaderPersistenceDecorator.swift */,
 			);
 			path = CarsReader;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 		AD621D3E298409C8008D0365 /* GUIDOMIA */ = {
 			isa = PBXGroup;
 			children = (
+				ADC325B92988077500819765 /* Extension */,
 				AD5AD0222985FF7C00833E52 /* PreviewMocks */,
 				AD5AD0182985E11000833E52 /* UseCase */,
 				AD5AD0132985DD9200833E52 /* Resources */,
@@ -453,6 +459,14 @@
 				ADC325B62987896F00819765 /* DropDownPickerConfiguration.swift */,
 			);
 			path = DropDownPicker;
+			sourceTree = "<group>";
+		};
+		ADC325B92988077500819765 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADC325BA2988078900819765 /* FileManager.Convenience.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,8 +620,10 @@
 				AD5ACFDB2984C8A500833E52 /* RatingView.swift in Sources */,
 				ADC325B32987895500819765 /* DropDownPickerModel.swift in Sources */,
 				AD5AD01D2985FD6900833E52 /* CarsUseCaseStyle.swift in Sources */,
+				ADC325BB2988078900819765 /* FileManager.Convenience.swift in Sources */,
 				ADC325A82987711300819765 /* FilterList.swift in Sources */,
 				AD5ACFFE2984E3F800833E52 /* ListCardConfiguration.swift in Sources */,
+				ADC325BD298809E800819765 /* CarsReaderPersistenceDecorator.swift in Sources */,
 				AD5AD01F2985FD8C00833E52 /* CarsUseCaseModel.swift in Sources */,
 				AD5AD0002984E40200833E52 /* ListCardStyle.swift in Sources */,
 				AD5AD0092984FDDF00833E52 /* CarListModel.swift in Sources */,

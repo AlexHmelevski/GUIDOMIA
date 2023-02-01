@@ -30,11 +30,15 @@ extension CarList {
                 .sink { [weak self] in self?.filterModels(using: $0) }
         }
         
-        @MainActor
+        
         func fetchCars() async throws {
             dataModels = try await reader.carModels()
-            cars = transform(dataModels: dataModels)
-           
+            await updateCars(dataModels)
+        }
+        
+        @MainActor
+        private func updateCars(_ models: [CarDataModel]) {
+            cars = transform(dataModels: models)
             filterModel.filters  = filters
         }
         
